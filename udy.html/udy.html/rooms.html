@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комнаты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #D95E00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #D95E00;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 25px 40px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #D95E00;
+        }
+
+        .btn-group button {
+            background-color: #D95E00;
+            color: white;
+            float: center;
+            padding: 10px;
+            width: 200px;
+            height: 40px;
+            border: 1px solid white;
+            cursor: pointer;
+            font-size: 15px;
+            transition: transform 0.3s;
+            border-radius: 5px;
+        }
+
+        .btn-group:hover {
+            transform: scale(1.1);
+        }
+
+        .room-container {
+            display:inline-block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .room-card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #D95E00;
+            text-align: center;
+        }
+
+        .room-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .edit-form {
+            display: none;
+        }
+
+        .edit-form input, .edit-form textarea {
+            background-color: #FFFFE0;
+            color: #D95E00;
+            padding: 7px 6px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .edit-form button {
+            float: right;
+            margin-right: 20px;
+            background-color: white;
+            color: #D95E00;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+<nav>
+    <a href="profile.html">Личный кабинет</a>
+    <a href="about.html">О нас</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="rooms.html">Комнаты</a>
+    <a href="uddy.html">Главная</a>
+</nav>
+
+<header>
+    <h1>КОМНАТЫ</h1>
+</header>
+<div class="room-container">
+    <!-- Комната Киноиндустрия-->
+    <div class="room-card">
+        <img src="room1.jpg" alt="Комната по киноиндустрии">
+        <h2>Киноиндустрия</h2>
+        <p>Здесь обсуждаем новинки кино и любимых актеров.</p>
+
+        <table cellspacing="10">
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="btn-group" style="width:100%">
+        <button onclick="location.href='auth-form.html'">Подробнее</button>
+        <!--<button onclick="toggleEditForm('room1')">Подробнее</button>-->
+        </div>
+    </div>
+
+    <!-- Комната Программирование -->
+    <div class="room-card">
+        <img src="progr.jpg" alt="Комната по программированию">
+        <h2>Программирование</h2>
+        <p>Здесь делимся навыком программирования по разным направлениям,
+            оттачиваем навыки преподавания, а также учимся делать <br/>
+            крутые вещи с помощью кодинга.</p>
+
+        <table cellspacing="10">
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="btn-group" style="width:100%">
+        <button onclick="location.href='auth-form.html'">Подробнее</button>
+        <!--<button onclick="toggleEditForm('room1')">Подробнее</button>-->
+        </div>
+    </div>
+
+    <!-- Комната Музыка -->
+    <div class="room-card">
+        <img src="mus.jpg" alt="Комната по музыке">
+        <h2>Музыка</h2>
+        <p>Здесь обсуждаем как играть на самых разных инструментах, <br/> 
+            а также для тех кто хочет попробовать себя в роли преподавателя </p>
+    
+        <table cellspacing="10">
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+        <div class="btn-group" style="width:100%">
+        <button onclick="location.href='auth-form.html'">Подробнее</button>
+        <!--<button onclick="toggleEditForm('room1')">Подробнее</button>-->
+        </div>
+    </div>
+
+    <!-- Комната Языки -->
+    <div class="room-card">
+        <img src="lang.jpg" alt="Комната по языкам">
+        <h2>Языки</h2>
+        <p>Здесь обсуждаем иностанные языки вместе с теми, кто в самом начале своего пути, <br/>
+            здесь вы можете обменяться опытом и расти быстрей вместе</p>
+        
+        <table cellspacing="10">
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <div class="btn-group" style="width:100%">
+        <button onclick="location.href='auth-form.html'">Подробнее</button>
+        <!--<button onclick="toggleEditForm('room1')">Подробнее</button>-->
+        </div>
+    </div>
+        <!-- Форма редактирования -->
+        <!--
+        <div id="editForm-room1" class="edit-form">
+            <input type="text" id="title-room1" placeholder="Название">
+            <textarea id="description-room1" placeholder="Описание"></textarea>
+            <button onclick="editRoom('room1')">Сохранить</button>
+        </div>
+    </div>
+        -->
+    <!-- Добавьте еще карточек комнат по аналогии -->
+</div>
+    <!--
+<script>
+    function toggleEditForm(roomId) {
+        var editForm = document.getElementById('editForm-' + roomId);
+        if (editForm.style.display === 'none') {
+            editForm.style.display = 'block';
+        } else {
+            editForm.style.display = 'none';
+        }
+    }
+
+    function editRoom(roomId) {
+        var title = document.getElementById('title-' + roomId).value;
+        var description = document.getElementById('description-' + roomId).value;
+
+        // TODO: Отправить данные на сервер для сохранения
+
+        // После сохранения можно обновить данные на странице без перезагрузки
+        var roomCard = document.querySelector('.room-card');
+        roomCard.querySelector('h2').innerText = title;
+        roomCard.querySelector('p').innerText = description;
+
+        // Скрыть форму редактирования после сохранения
+        toggleEditForm(roomId);
+    }
+</script>
+    -->
+</body>
+</html>

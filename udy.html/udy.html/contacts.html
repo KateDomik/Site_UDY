@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #D95E00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #D95E00;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 25px 40px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #D95E00;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            color: #D95E00;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        /* Стили для ссылок на телеграм и вконтакте */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #D95E00;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <a href="profile.html">Личный кабинет</a>
+    <a href="about.html">О нас</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="rooms.html">Комнаты</a>
+    <a href="uddy.html">Главная</a>
+    </nav>
+
+<header>
+    <h1>Контакты</h1>
+</header>
+
+<div class="contact-container">
+    <h2>uul</h2>
+
+    <div class="card" onclick="redirectToContact('John', 'john@example.com')">
+        <p><strong>name:</strong> uul</p>
+        <p><strong>tg:</strong> lobanoba_ua</p>
+    </div>
+
+    <div class="social-links">
+        <!-- Ссылка на телеграм -->
+        <a href="https://t.me/lobanova_ua" target="_blank">Telegram</a>
+        
+        <!-- Ссылка на вконтакте -->
+        <a href="https://vk.com/your_vk_profile" target="_blank">ВКонтакте</a>
+    </div>
+</div>
+
+<script>
+    function redirectToContact(name, email) {
+        var url = 'contact_details.html?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email);
+        window.location.href = url;
+    }
+</script>
+
+<div class="contact-container">
+    <h2>qwirz</h2>
+
+    <div class="card" onclick="redirectToContact('John', 'john@example.com')">
+        <p><strong>name:</strong> qwirz</p>
+        <p><strong>tg:</strong> qwirz</p>
+    </div>
+
+    <div class="social-links">
+        <!-- Ссылка на телеграм -->
+        <a href="https://t.me/qwirz" target="_blank">Telegram</a>
+        
+        <!-- Ссылка на вконтакте -->
+        <a href="https://vk.com/your_vk_profile" target="_blank">ВКонтакте</a>
+    </div>
+</div>
+
+<script>
+    function redirectToContact(name, email) {
+        var url = 'contact_details.html?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email);
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
